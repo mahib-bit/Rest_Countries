@@ -1,5 +1,3 @@
----
-# Programming Hero Countries API
 
 A simple project demonstrating the usage of the Programming Hero Countries API endpoints.
 Provides information about all countries, specific country by code or name, or by language.
