@@ -1,7 +1,7 @@
 import "./Country.css";
 import { useState } from "react";
 
-const Country = ({ country, handleCount }) => {
+const Country = ({ country, handleCount , handleWishList }) => {
     const [visited, setVisited] = useState(false); 
    
 
@@ -30,6 +30,9 @@ const Country = ({ country, handleCount }) => {
             </p>
             <button onClick={handleVisited}>
             {visited ? `Visited` : `Not Visited`}
+            </button>
+            <button onClick={() => {handleWishList(country.flags.flags.png)}}>
+                Add to Wishlist
             </button>
         </div>
     );
